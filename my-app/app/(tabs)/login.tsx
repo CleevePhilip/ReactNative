@@ -1,9 +1,11 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
+import { Link } from "expo-router";
 const login = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.text}>Hello</Text>
+      <Link href="/">Home</Link>
     </View>
   );
 };
