@@ -1,4 +1,4 @@
-import { Tabs, Stack } from "expo-router";
+import { Tabs } from "expo-router";
 import React from "react";
 import { TabBarIcon } from "@/components/navigation/TabBarIcon";
 import { Colors } from "@/constants/Colors";
@@ -39,22 +39,7 @@ export default function TabLayout() {
               />
             ),
           }}
-        />{" "}
-        <Stack
-          screenOptions={{
-            headerStyle: {
-              backgroundColor: "#f4511e",
-            },
-            headerTintColor: "#fff",
-            headerTitleStyle: {
-              fontWeight: "bold",
-            },
-          }}
-        >
-          <Stack.Screen name="index" />
-          <Stack.Screen name="login" />
-          <Stack.Screen name="(home)" />
-        </Stack>
+        />
       </Tabs>
     </>
   );
